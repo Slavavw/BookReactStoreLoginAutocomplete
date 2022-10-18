@@ -1,0 +1,12 @@
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./style/style.css ***!
+  \*************************************************************************************************************/
+div .wrapper-flex {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  align-content: center;
+  flex-flow: row;
+}
+
+/*# sourceMappingURL=style.css.map*/

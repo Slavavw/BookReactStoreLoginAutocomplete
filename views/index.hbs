@@ -1,0 +1,31 @@
+<!--Создаем шаблонизатор handlebars для серверного рендеринга
+Сервер будет формировать на своей стороне и выдавать браузеру готовую страницу-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Autocomplete with React.js</title>
+  <meta name="description" content="React Quickly: Autocomplete" />
+  <meta name="author" content="Slava" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <!--тут путь к фалам должен начинаться через / иначе сервер не будет читать путь к статическому файлу в папке public -->
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div>{{{data}}}</div>
+    <div class="row-fluid">
+      <div class="span12">
+        <div id="content">
+          <div class="row-fluid" id="autocomplete" />{{{autocomplete}}}
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/app.js"></script>
+    <!--тут путь к фалам должен начинаться через / иначе сервер не будет читать путь к статическому файлу в папке public -->
+</body>
+
+</html>
